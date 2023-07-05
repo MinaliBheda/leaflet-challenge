@@ -87,7 +87,7 @@ function createMarkers(response) {
       fillColor: chooseColor(depth),
       radius: mag,
       weight: 1
-    }).bindPopup("<h3>" + feature.properties.place + "<h3><h3>Magnitude: " + feature.properties.mag + "</h3>");
+    }).bindPopup("<h3>" + feature.properties.place + "<h3><h3>Magnitude: " + feature.properties.mag +"<h3><h3>Depth: " + depth + "</h3>");
   
     // Add the marker to the eartquakeMarkers array.
     earthquakeMarkers.push(earthquakeMarker);
